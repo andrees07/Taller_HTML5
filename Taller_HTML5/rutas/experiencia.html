@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <script src="../js/cantera.js"></script>
     <title>Hoja de Vida</title>
 </head>
 
@@ -37,6 +38,19 @@
                     Estudios realizados
                 </a>
             </li>
+            <li>
+                <select id="mySeleccion" style="cursor: pointer;" onchange="selectorColor()">
+                    <option value="white">
+                        Blanco
+                    </option>
+                    <option value="cadetblue">
+                        azul
+                    </option>
+                    <option value="gray">
+                        gris
+                    </option>
+                </select>
+            </li>
         </ul>
     </nav>
     <section style="padding-top: 50px;">
@@ -44,68 +58,71 @@
             <h2>
                 Experiencia Laboral
             </h2>
-            <h4>
-                Registraduria Nacional del Estado Civil
-            </h4>
-            <ul>
-                <li>
-                    Cargo: Auxiliar administrativo
-                </li>
-                <li>
-                    Jefe inmediato: Hilda Luz Jara Velez
-                </li>
-                <li>
-                    Telefono: 604 216 2525
-                </li>
-                <li>
-                    Tiempo laborado Marzo 07 de 2022 a abril 06 de 2022
-                </li>
-            </ul>
-            <h4>
-                Registraduria Nacional del Estado Civil
-            </h4>
-            <ul>
-                <li>
-                    Cargo: Auxiliar administrativo
-                </li>
-                <li>
-                    Jefe inmediato: Hilda Luz Jara Velez
-                </li>
-                <li>
-                    Telefono: 604 216 2525
-                </li>
-                <li>
-                    Tiempo laborado: Mayo 23 de 2022 a junio 22 de 2022
-                </li>
-            </ul>
-            <h4>
-                Pilatos
-            </h4>
-            <ul>
-                <li>
-                    Cargo: Auxiliar de seguridad
-                </li>
-                <li>
-                    Telefono: 604 265 3111
-                </li>
-                <li>
-                    Tiempo laborado: Diciembre 03 de 2019 a enero 08 de 2020
-                </li>
-            </ul>
-            <h4>
-                Secretaría de Movilidad de Medellín
-            </h4>
-            <ul>
-                <li>
-                    Cargo: Auxiliar de archivo
-                </li>
-                <li>
-                    Telefono: 604 445 7777
-                </li>
-                <li>
-                    Tiempo laborado: Junio 23 de 2015 a octubre 22 de 2015
-                </li>
-            </ul>
+                <h4>
+                    Registraduria Nacional del Estado Civil <span class="flecha" onclick="mostrarOcultar('experiencia1')">▼</span>
+                </h4>
+                <ul id="experiencia1">
+                    <li>
+                        Cargo: Auxiliar administrativo
+                    </li>
+                    <li>
+                        Jefe inmediato: Hilda Luz Jara Velez
+                    </li>
+                    <li>
+                        Telefono: 604 216 2525
+                    </li>
+                    <li>
+                        Tiempo laborado Marzo 07 de 2022 a abril 06 de 2022
+                    </li>
+                </ul>
+
+                <h4>
+                    Registraduria Nacional del Estado Civil <span class="flecha" onclick="mostrarOcultar('experiencia2')">▼</span>
+                </h4>
+                <ul id="experiencia2">
+                    <li>
+                        Cargo: Auxiliar administrativo
+                    </li>
+                    <li>
+                        Jefe inmediato: Hilda Luz Jara Velez
+                    </li>
+                    <li>
+                        Telefono: 604 216 2525
+                    </li>
+                    <li>
+                        Tiempo laborado: Mayo 23 de 2022 a junio 22 de 2022
+                    </li>
+                </ul>
+                <h4>
+                    Pilatos <span class="flecha" onclick="mostrarOcultar('experiencia3')">▼</span>
+                </h4>
+                <ul id="experiencia3">
+                    <li>
+                        Cargo: Auxiliar de seguridad 
+                    </li>
+                    <li>
+                        Telefono: 604 265 3111
+                    </li>
+                    <li>
+                        Tiempo laborado: Diciembre 03 de 2019 a enero 08 de 2020
+                    </li>
+                </ul>
+                
+                <h4>
+                    Secretaría de Movilidad de Medellín <span class="flecha" onclick="mostrarOcultar('experiencia4')">▼</span>
+                </h4>
+                <ul id="experiencia4">
+                    <li>
+                        Cargo: Auxiliar de archivo
+                    </li>
+                    <li>
+                        Telefono: 604 445 7777
+                    </li>
+                    <li>
+                        Tiempo laborado: Junio 23 de 2015 a octubre 22 de 2015
+                    </li>
+                </ul>
+                
         </div>
     </section>
     <footer style="background-color: #1e2939; padding: 25px;">

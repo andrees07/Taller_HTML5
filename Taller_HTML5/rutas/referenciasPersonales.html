@@ -6,38 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <script src="../js/cantera.js"></script>
     <title>Hoja de Vida</title>
 </head>
 
 <body>
     <nav style="background-color: #1e2939; color: #fff; position: fixed;">
-        <ul style="display: flex;
-            flex-direction: row;
-            list-style-type: none;">
+        <ul style="display: flex; flex-direction: row; list-style-type: none;">
             <li>
-                <a style="color: #fff; padding: 0px 25px 0px 25px;" href="../index.html">
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="../index.html">
                     Información principal
                 </a>
             </li>
             <li>
-                <a style="color: #fff; padding: 0px 25px 0px 25px;" href="experiencia.html">
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="experiencia.html">
                     Experiencia laboral
                 </a>
             </li>
             <li>
-                <a style="color: #fff; padding: 0px 25px 0px 25px;" href="referenciasPersonales.html">
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="referenciasPersonales.html">
                     Referencias personales
                 </a>
             </li>
             <li>
-                <a style="color: #fff;padding: 0px 25px 0px 25px;" href="referenciasFamiliares.html">
+                <a style="color: #fff;padding: 0px 20px 0px 20px;" href="referenciasFamiliares.html">
                     Referencias familiares
                 </a>
             </li>
             <li>
-                <a style="color: #fff; padding: 0px 25px 0px 25px; padding-right: 50px;" href="estudios.html">
+                <a style="color: #fff; padding: 0px 20px 0px 20px; padding-right: 50px;" href="estudios.html">
                     Estudios realizados
                 </a>
+            </li>
+            <li>
+                <select id="mySeleccion" style="cursor: pointer;" onchange="selectorColor()">
+                    <option value="white">
+                        Blanco
+                    </option>
+                    <option value="cadetblue">
+                        azul
+                    </option>
+                    <option value="gray">
+                        gris
+                    </option>
+                </select>
             </li>
         </ul>
     </nav>
@@ -46,9 +58,9 @@
             <h2>Referencias personales</h2>
             <div>
                 <h4>
-                    Luisa Fernanda Pérez
+                    Luisa Fernanda Pérez <span class="flecha" onclick="mostrarOcultar('personal1')">▼</span>
                 </h4>
-                <ul>
+                <ul id="personal1">
                     <li>
                         Analista de operaciones
                     </li>
@@ -62,9 +74,9 @@
             </div>
             <div>
                 <h4>
-                    María Eugenia Córdoba
+                    María Eugenia Córdoba <span class="flecha" onclick="mostrarOcultar('personal2')">▼</span>
                 </h4>
-                <ul>
+                <ul id="personal2">
                     <li>
                         Auxiliar de diseño
                     </li>
@@ -75,8 +87,10 @@
                         314 776 8141
                     </li>
                 </ul>
-                <h4 class="cargo">Alexis Castaño Rojas</span></h4>
-                <ul class="lista-experiencia">
+                <h4>
+                    Alexis Castaño Rojas<span class="flecha" onclick="mostrarOcultar('personal3')">▼</span>
+                </h4>
+                <ul id="personal3">
                     <li>
                         Independiente
                     </li>

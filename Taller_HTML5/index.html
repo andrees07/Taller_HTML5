@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head onload="main()">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/cantera.js"></script>
     <title>Hoja de Vida</title>
 </head>
 
 <body>
     <nav style="background-color: #1e2939; color: #fff; position: fixed;">
-        <ul style="display: flex;
-            flex-direction: row;
-            list-style-type: none;">
+        <ul style="display: flex; flex-direction: row; list-style-type: none;">
             <li>
-                <a style="color: #fff; padding: 0px 25px 0px 25px;" href="index.html">
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="index.html">
                     Información principal
                 </a>
             </li>
             <li>
-                <a style="color: #fff; padding: 0px 25px 0px 25px;" href="rutas/experiencia.html">
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="rutas/experiencia.html">
                     Experiencia laboral
                 </a>
             </li>
             <li>
-                <a style="color: #fff; padding: 0px 25px 0px 25px;" href="rutas/referenciasPersonales.html">
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="rutas/referenciasPersonales.html">
                     Referencias personales
                 </a>
             </li>
             <li>
-                <a style="color: #fff;padding: 0px 25px 0px 25px;" href="rutas/referenciasFamiliares.html">
+                <a style="color: #fff;padding: 0px 20px 0px 20px;" href="rutas/referenciasFamiliares.html">
                     Referencias familiares
                 </a>
             </li>
             <li>
-                <a style="color: #fff; padding: 0px 25px 0px 25px; padding-right: 50px;" href="rutas/estudios.html">
+                <a style="color: #fff; padding: 0px 20px 0px 20px; padding-right: 50px;" href="rutas/estudios.html">
                     Estudios realizados
                 </a>
+            </li>
+            <li>
+                <select id="mySeleccion" style="cursor: pointer;" onchange="selectorColor()">
+                    <option value="white">
+                        Blanco
+                    </option>
+                    <option value="cadetblue">
+                        azul
+                    </option>
+                    <option value="gray">
+                        gris
+                    </option>
+                </select>
             </li>
         </ul>
     </nav>
