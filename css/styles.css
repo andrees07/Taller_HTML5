@@ -1,0 +1,33 @@
+body {
+    width: 1024px;
+    color: c
+}
+
+nav {
+    width: 1024px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: black;
+}
+
+img {
+    height: 250px;
+    border-radius: 90px;
+    border: 10px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flecha {
+    cursor: pointer;
+    margin-left: 10px;
+}
+

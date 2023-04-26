@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head onload="main()">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/cantera.js"></script>
+    <title>Hoja de Vida</title>
+</head>
+
+<body>
+    <nav style="background-color: #1e2939; color: #fff; position: fixed;">
+        <ul style="display: flex; flex-direction: row; list-style-type: none;">
+            <li>
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="index.html">
+                    Información principal
+                </a>
+            </li>
+            <li>
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="rutas/experiencia.html">
+                    Experiencia laboral
+                </a>
+            </li>
+            <li>
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="rutas/referenciasPersonales.html">
+                    Referencias personales
+                </a>
+            </li>
+            <li>
+                <a style="color: #fff;padding: 0px 20px 0px 20px;" href="rutas/referenciasFamiliares.html">
+                    Referencias familiares
+                </a>
+            </li>
+            <li>
+                <a style="color: #fff; padding: 0px 20px 0px 20px; padding-right: 50px;" href="rutas/estudios.html">
+                    Estudios realizados
+                </a>
+            </li>
+            <li>
+                <select id="mySeleccion" style="cursor: pointer;" onchange="selectorColor()">
+                    <option value="white">
+                        Blanco
+                    </option>
+                    <option value="cadetblue">
+                        azul
+                    </option>
+                    <option value="gray">
+                        gris
+                    </option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <section style="padding: 100px 0px 0px 75px;">
+        <div>
+            <h1>
+                Andres Felipe Ospina Torres
+            </h1>
+            <div>
+                <div>
+                    <img style="height: 250px; border-radius: 90px;" src="img/Captura.PNG" alt="Foto de perfil">
+                </div>
+                <h3>
+                    Contactos
+                </h3>
+                <div>
+                    <a href="tel: 311 759 0837">
+                        311 759 0837
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto: ades1515@gmail.com">
+                        ades1515@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3>
+                    <p>Descripción</p>
+                </h3>
+                <p>
+                    Estudiante de Ingeniería Informática, actualmente en 9º<br> semestre,
+                    técnico laboral por
+                    competencias en sistemas,<br> desarrollo de software y redes, con gusto por la tecnología <br>
+                    y los sistemas, con conicimientos en C, C++, Java, HTML5,<br> JavaScript, CSS
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #1e2939; padding: 25px;">
+        <a style="color:white;padding: 25px" href="Descargables/HV Andres Ospina.pdf" download>
+            Descargar hoja de vida en formato PDF
+        </a>
+    </footer>
+</body>
+
+</html>

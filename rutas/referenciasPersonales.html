@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <script src="../js/cantera.js"></script>
+    <title>Hoja de Vida</title>
+</head>
+
+<body>
+    <nav style="background-color: #1e2939; color: #fff; position: fixed;">
+        <ul style="display: flex; flex-direction: row; list-style-type: none;">
+            <li>
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="../index.html">
+                    Información principal
+                </a>
+            </li>
+            <li>
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="experiencia.html">
+                    Experiencia laboral
+                </a>
+            </li>
+            <li>
+                <a style="color: #fff; padding: 0px 20px 0px 20px;" href="referenciasPersonales.html">
+                    Referencias personales
+                </a>
+            </li>
+            <li>
+                <a style="color: #fff;padding: 0px 20px 0px 20px;" href="referenciasFamiliares.html">
+                    Referencias familiares
+                </a>
+            </li>
+            <li>
+                <a style="color: #fff; padding: 0px 20px 0px 20px; padding-right: 50px;" href="estudios.html">
+                    Estudios realizados
+                </a>
+            </li>
+            <li>
+                <select id="mySeleccion" style="cursor: pointer;" onchange="selectorColor()">
+                    <option value="white">
+                        Blanco
+                    </option>
+                    <option value="cadetblue">
+                        azul
+                    </option>
+                    <option value="gray">
+                        gris
+                    </option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <section style="padding-top: 50px;">
+        <div>
+            <h2>Referencias personales</h2>
+            <div>
+                <h4>
+                    Luisa Fernanda Pérez <span class="flecha" onclick="mostrarOcultar('personal1')">▼</span>
+                </h4>
+                <ul id="personal1">
+                    <li>
+                        Analista de operaciones
+                    </li>
+                    <li>
+                        Marsh
+                    </li>
+                    <li>
+                        Celular: 316 490 0136
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>
+                    María Eugenia Córdoba <span class="flecha" onclick="mostrarOcultar('personal2')">▼</span>
+                </h4>
+                <ul id="personal2">
+                    <li>
+                        Auxiliar de diseño
+                    </li>
+                    <li>
+                        Pensionada
+                    </li>
+                    <li>
+                        314 776 8141
+                    </li>
+                </ul>
+                <h4>
+                    Alexis Castaño Rojas<span class="flecha" onclick="mostrarOcultar('personal3')">▼</span>
+                </h4>
+                <ul id="personal3">
+                    <li>
+                        Independiente
+                    </li>
+                    <li>
+                        310 504 2451
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #1e2939; padding: 25px;">
+        <a style="color:white;padding: 25px" href="../Descargables/HV Andres Ospina.pdf" download>
+            Descargar hoja de vida en formato PDF
+        </a>
+    </footer>
+</body>
+
+</html>
